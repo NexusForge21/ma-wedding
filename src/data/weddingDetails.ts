@@ -105,7 +105,7 @@ export const weddingDetails: WeddingData = {
     {
       id: "dinner",
       title: "NIKAH DINNER",
-      subTitle: "An Evening of Love & Togetherness",
+      subTitle: "A Celebration of a Blessed Beginning",
       date: "Thursday, 26 November 2026",
       islamicDate: "15 Jamadi us-Sani 1448 AH",
       time: "8:00 PM",
@@ -120,7 +120,7 @@ export const weddingDetails: WeddingData = {
     {
       id: "valima",
       title: "VALIMA",
-      subTitle: "A Celebration of a Blessed Beginning",
+      subTitle: "An Evening of Love & Togetherness",
       date: "Friday, 27 November 2026",
       islamicDate: "16 Jamadi us-Sani 1448 AH",
       time: "8:00 PM",

@@ -138,7 +138,7 @@ export const weddingDetails: WeddingData = {
   closingNote: "Made with love and duas",
   locationYear: "Gulbarga, Karnataka • 2026",
   instagram: {
-    username: "theinvitationhub.co",
-    url: "https://www.instagram.com/theinvitationhub.co/"
+    username: "the.invitationhub.co",
+    url: "https://www.instagram.com/the.invitationhub.co/"
   }
 };

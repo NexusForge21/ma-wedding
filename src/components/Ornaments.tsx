@@ -161,15 +161,13 @@ export const MonogramSeal: React.FC<{ size?: 'sm' | 'md' | 'lg' | 'xl'; classNam
         {/* --- EXACT REQUIREMENTS: M = GOLD, & = BLACK, A = GOLD --- */}
         {/* Letter M (Champagne Gold) */}
         <text
-          x="75"
-          y="118"
+          x="62"
+          y="116"
           fontFamily="'Cormorant Garamond', Georgia, serif"
-          fontSize="68"
+          fontSize="50"
           fontWeight="600"
           fill="url(#goldGradient)"
           textAnchor="middle"
-          letterSpacing="-1"
-          style={{ fontFeatureSettings: '"swsh", "cswh"' }}
         >
           M
         </text>
@@ -177,9 +175,9 @@ export const MonogramSeal: React.FC<{ size?: 'sm' | 'md' | 'lg' | 'xl'; classNam
         {/* Ampersand & (Deep Black / Charcoal #29252E) */}
         <text
           x="100"
-          y="116"
+          y="115"
           fontFamily="'Cormorant Garamond', Georgia, serif"
-          fontSize="48"
+          fontSize="36"
           fontWeight="400"
           fill="#29252E"
           textAnchor="middle"
@@ -190,15 +188,13 @@ export const MonogramSeal: React.FC<{ size?: 'sm' | 'md' | 'lg' | 'xl'; classNam
 
         {/* Letter A (Champagne Gold) */}
         <text
-          x="125"
-          y="118"
+          x="138"
+          y="116"
           fontFamily="'Cormorant Garamond', Georgia, serif"
-          fontSize="68"
+          fontSize="50"
           fontWeight="600"
           fill="url(#goldGradient)"
           textAnchor="middle"
-          letterSpacing="-1"
-          style={{ fontFeatureSettings: '"swsh", "cswh"' }}
         >
           A
         </text>

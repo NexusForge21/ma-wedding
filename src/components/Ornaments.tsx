@@ -185,9 +185,9 @@ export const MonogramSeal: React.FC<{ size?: 'sm' | 'md' | 'lg' | 'xl'; classNam
         {/* Letter M */}
         <text
           x="78"
-          y="116"
+          y="120"
           fontFamily="'Cormorant Garamond', Georgia, serif"
-          fontSize="66"
+          fontSize="72"
           fontWeight="500"
           fill="url(#goldGradient)"
           textAnchor="middle"
@@ -200,13 +200,13 @@ export const MonogramSeal: React.FC<{ size?: 'sm' | 'md' | 'lg' | 'xl'; classNam
         {/* Ampersand & in center script */}
         <text
           x="100"
-          y="112"
+          y="116"
           fontFamily="'Pinyon Script', cursive"
-          fontSize="40"
+          fontSize="44"
           fontWeight="400"
           fill="#B8A4D8"
           textAnchor="middle"
-          opacity="0.9"
+          opacity="0.95"
         >
           &amp;
         </text>
@@ -214,9 +214,9 @@ export const MonogramSeal: React.FC<{ size?: 'sm' | 'md' | 'lg' | 'xl'; classNam
         {/* Letter A */}
         <text
           x="122"
-          y="116"
+          y="120"
           fontFamily="'Cormorant Garamond', Georgia, serif"
-          fontSize="66"
+          fontSize="72"
           fontWeight="500"
           fill="url(#goldGradient)"
           textAnchor="middle"
@@ -224,20 +224,6 @@ export const MonogramSeal: React.FC<{ size?: 'sm' | 'md' | 'lg' | 'xl'; classNam
           style={{ fontFeatureSettings: '"swsh", "cswh"' }}
         >
           A
-        </text>
-
-        {/* Subtitle Ring Banner */}
-        <text
-          x="100"
-          y="144"
-          fontFamily="'Inter', sans-serif"
-          fontSize="8.5"
-          fontWeight="600"
-          fill="#9A7B42"
-          textAnchor="middle"
-          letterSpacing="3"
-        >
-          NIKAH • 2026
         </text>
       </svg>
     </div>

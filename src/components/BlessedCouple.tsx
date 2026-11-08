@@ -52,9 +52,6 @@ export const BlessedCouple: React.FC = () => {
             className="flex flex-col items-center justify-center my-2 md:my-0 z-10"
           >
             <MonogramSeal size="xl" />
-            <span className="font-serif italic text-sm text-[#C6A46C] tracking-widest mt-2 block">
-              Eternal Union
-            </span>
           </motion.div>
 
           {/* GROOM SIDE CARD */}

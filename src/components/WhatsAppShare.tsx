@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, Check, Copy } from 'lucide-react';
+import { weddingDetails } from '../data/weddingDetails';
 
 export const WhatsAppShare: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -12,7 +13,7 @@ export const WhatsAppShare: React.FC = () => {
     return 'https://ma-wedding.pages.dev';
   };
 
-  const shareText = `You're cordially invited to celebrate the wedding of Mizbha Tahereem Fatima & Altamash Ali.
+  const shareText = `You're cordially invited to celebrate the wedding of ${weddingDetails.bride.fullName} & ${weddingDetails.groom.fullName}.
 
 Nikah: 26 November 2026
 Wedding Dinner: 26 November 2026

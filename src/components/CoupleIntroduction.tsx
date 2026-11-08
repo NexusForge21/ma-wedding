@@ -15,7 +15,7 @@ export const CoupleIntroduction: React.FC = () => {
             The Blessed Couple
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl text-[#29252E] font-medium">
-            Mizbha &amp; Altamash
+            Mizba &amp; Altamash
           </h2>
           <FloralDivider className="my-4" />
         </div>

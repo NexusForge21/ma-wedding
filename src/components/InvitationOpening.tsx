@@ -13,7 +13,6 @@ export const InvitationOpening: React.FC<InvitationOpeningProps> = ({ onOpen }) 
 
   const handleOpenClick = () => {
     setIsOpening(true);
-    // Allow the envelope unfold & card reveal animation to play gracefully
     setTimeout(() => {
       onOpen();
     }, 1500);
@@ -65,7 +64,7 @@ export const InvitationOpening: React.FC<InvitationOpeningProps> = ({ onOpen }) 
           <div className="absolute inset-3 border border-[#C6A46C]/25 rounded-xl pointer-events-none" />
           <div className="absolute inset-4 border border-dashed border-[#B8A4D8]/35 rounded-lg pointer-events-none" />
 
-          {/* Top Section */}
+          {/* Top Section - Bismillah Arabic only */}
           <div className="text-center pt-2 relative z-10">
             <span className="font-arabic text-xl sm:text-2xl text-[#9A7B42] block mb-2 leading-relaxed">
               {weddingDetails.bismillahArabic}
@@ -85,7 +84,7 @@ export const InvitationOpening: React.FC<InvitationOpeningProps> = ({ onOpen }) 
             </motion.div>
 
             <h1 className="mt-5 font-serif text-2xl sm:text-3xl font-medium tracking-wide text-[#29252E] text-center">
-              Mizbha &amp; Altamash
+              Mizba &amp; Altamash
             </h1>
             <p className="mt-1 font-serif italic text-sm text-[#C6A46C]">Wedding Invitation</p>
 

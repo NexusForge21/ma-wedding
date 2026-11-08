@@ -26,16 +26,26 @@ export const Hero: React.FC = () => {
         {/* Inner subtle outline */}
         <div className="absolute inset-2 sm:inset-3 border border-[#C6A46C]/20 rounded-xl pointer-events-none" />
 
-        {/* BISMILLAH */}
-        <div className="mb-6 space-y-2">
-          <p className="font-sans text-[11px] sm:text-xs tracking-[0.3em] uppercase text-[#9A7B42] font-semibold">
-            {weddingDetails.bismillahTransliteration}
-          </p>
+        {/* BISMILLAH (Pure Arabic only) & QURANIC AYAT */}
+        <div className="mb-6 space-y-3">
           <h2 className="font-arabic text-3xl sm:text-4xl text-[#9A7B42] leading-relaxed tracking-normal">
             {weddingDetails.bismillahArabic}
           </h2>
-          <p className="font-sans text-xs text-[#5A5462]/90 italic max-w-md mx-auto">
-            "{weddingDetails.bismillahMeaning}"
+          
+          <div className="pt-1 pb-2">
+            <p className="font-arabic text-2xl sm:text-3xl text-[#29252E] font-medium leading-relaxed">
+              {weddingDetails.quranicVerseArabic}
+            </p>
+            <p className="font-serif italic text-base sm:text-lg text-[#9A7B42] mt-1 font-normal tracking-wide">
+              "{weddingDetails.quranicVerseTranslation}"
+            </p>
+          </div>
+        </div>
+
+        {/* Grandfather's Blessings */}
+        <div className="my-3 py-1.5 px-4 rounded-full bg-[#FAF8F3] border border-[#C6A46C]/30 inline-block">
+          <p className="font-serif italic text-xs sm:text-sm text-[#5A5462] tracking-wide">
+            {weddingDetails.blessingLateGrandfather}
           </p>
         </div>
 

@@ -29,6 +29,11 @@ export const InvitationMessage: React.FC = () => {
             {weddingDetails.invitationMessage.opening}
           </h2>
 
+          {/* Grandfather's blessings note */}
+          <p className="font-serif italic text-sm text-[#5A5462] mb-3">
+            {weddingDetails.blessingLateGrandfather}
+          </p>
+
           <FloralDivider className="my-4" />
 
           <p className="font-serif text-lg sm:text-2xl text-[#29252E] leading-relaxed max-w-2xl mx-auto font-normal">
@@ -50,7 +55,7 @@ export const InvitationMessage: React.FC = () => {
             <div className="hidden sm:block text-[#C6A46C]">•</div>
             <div>
               <span className="block font-serif text-base text-[#29252E] font-medium">
-                Janab Liyaqat Ali Sahab
+                Liyaqat Ali
               </span>
               <span className="text-[#9A7B42]">Father of the Groom</span>
             </div>

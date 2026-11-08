@@ -6,8 +6,6 @@ import { InvitationMessage } from '../components/InvitationMessage';
 import { Countdown } from '../components/Countdown';
 import { WeddingEvents } from '../components/WeddingEvents';
 import { CoupleIntroduction } from '../components/CoupleIntroduction';
-import { Gallery } from '../components/Gallery';
-import { VenueLocations } from '../components/VenueLocations';
 import { WhatsAppShare } from '../components/WhatsAppShare';
 import { Footer } from '../components/Footer';
 import { FloatingPetals } from '../components/Ornaments';
@@ -42,8 +40,6 @@ export const Home: React.FC = () => {
         <Countdown />
         <WeddingEvents />
         <CoupleIntroduction />
-        <Gallery />
-        <VenueLocations />
         <Footer />
       </main>
 

@@ -25,44 +25,37 @@ export interface CoupleProfile {
   about: string;
 }
 
-export interface GalleryItem {
-  id: string;
-  title: string;
-  category: string;
-  aspectRatio: 'square' | 'portrait' | 'landscape';
-  imageUrl: string;
-}
-
 export interface WeddingData {
   bismillahArabic: string;
-  bismillahTransliteration: string;
-  bismillahMeaning: string;
+  quranicVerseArabic: string;
+  quranicVerseTranslation: string;
   coupleInitials: string;
   targetNikahDateISO: string; // 2026-11-26T16:30:00+05:30 (After Asr)
   bride: CoupleProfile;
   groom: CoupleProfile;
+  blessingLateGrandfather: string;
   invitationMessage: {
     opening: string;
     body: string;
     closing: string;
   };
   events: WeddingEvent[];
-  gallery: GalleryItem[];
   dua: string;
   contactNumber?: string;
 }
 
 export const weddingDetails: WeddingData = {
-  bismillahArabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
-  bismillahTransliteration: "BISMILLAHIR RAHMANIR RAHEEM",
-  bismillahMeaning: "In the name of Allah, the Most Gracious, the Most Merciful",
+  bismillahArabic: "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم",
+  quranicVerseArabic: "وَخَلَقْنَاكُمْ أَزْوَاجًا",
+  quranicVerseTranslation: "And We created you in pairs",
   coupleInitials: "M & A",
   targetNikahDateISO: "2026-11-26T16:30:00+05:30",
+  blessingLateGrandfather: "Under the blessings of Late Mr. Mohammed Yousuf Sahab",
 
   bride: {
     role: "Bride",
-    name: "Mizbha Tahereem Fatima",
-    fullName: "Mizbha Tahereem Fatima",
+    name: "Mizba Tehreem Fatima",
+    fullName: "Mizba Tehreem Fatima",
     qualification: "B. Pharmacy",
     parentage: "D/o. Mohammed Ibrahim Mulla",
     father: "Mohammed Ibrahim Mulla",
@@ -75,15 +68,15 @@ export const weddingDetails: WeddingData = {
     name: "Altamash Ali",
     fullName: "Altamash Ali",
     qualification: "B.E., Mechanical Engineer",
-    parentage: "S/o. Janab Liyaqat Ali Sahab",
-    father: "Janab Liyaqat Ali Sahab",
+    parentage: "S/o. Liyaqat Ali",
+    father: "Liyaqat Ali",
     photoPlaceholder: "/assets/images/groom-placeholder.svg",
     about: "May Allah bestow wisdom, happiness and prosperity upon this new journey together."
   },
 
   invitationMessage: {
     opening: "In the name of Allah, the Most Merciful, the Most Compassionate.",
-    body: "With the blessings of Almighty Allah and our beloved families, we cordially invite you to join us in celebrating the wedding ceremony of Mizbha Tahereem Fatima and Altamash Ali.",
+    body: "With the blessings of Almighty Allah and our beloved families, we cordially invite you to join us in celebrating the wedding ceremony of Mizba Tehreem Fatima and Altamash Ali.",
     closing: "Your gracious presence and duas will make this occasion even more special."
   },
 
@@ -131,51 +124,6 @@ export const weddingDetails: WeddingData = {
       googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Majestic Garden Function Hall, Qamar Colony, Ring Road, Gulbarga, Karnataka"),
       iconType: "valima",
       note: "Join us with your families for a joyful evening."
-    }
-  ],
-
-  gallery: [
-    {
-      id: "gallery-1",
-      title: "Floral Arabesque",
-      category: "Invitation Motif",
-      aspectRatio: "portrait",
-      imageUrl: "/assets/images/gallery-1.svg"
-    },
-    {
-      id: "gallery-2",
-      title: "Golden Crescent & Arch",
-      category: "Islamic Architecture",
-      aspectRatio: "square",
-      imageUrl: "/assets/images/gallery-2.svg"
-    },
-    {
-      id: "gallery-3",
-      title: "Lavender Blossom Wreath",
-      category: "Floral Stationery",
-      aspectRatio: "portrait",
-      imageUrl: "/assets/images/gallery-3.svg"
-    },
-    {
-      id: "gallery-4",
-      title: "Traditional Lantern & Lights",
-      category: "Celebration",
-      aspectRatio: "landscape",
-      imageUrl: "/assets/images/gallery-4.svg"
-    },
-    {
-      id: "gallery-5",
-      title: "Royal M & A Monogram",
-      category: "Emblem",
-      aspectRatio: "square",
-      imageUrl: "/assets/images/gallery-5.svg"
-    },
-    {
-      id: "gallery-6",
-      title: "Serene Mosque Dome",
-      category: "Sacred Venue",
-      aspectRatio: "portrait",
-      imageUrl: "/assets/images/gallery-6.svg"
     }
   ],
 

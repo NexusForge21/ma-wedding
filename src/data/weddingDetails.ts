@@ -20,16 +20,8 @@ export interface CoupleProfile {
   qualification: string;
   parentage: string;
   father: string;
-  role: 'Bride' | 'Groom';
-  illustration: string;
+  role: string;
   about: string;
-}
-
-export interface GalleryItem {
-  id: string;
-  title: string;
-  category: string;
-  imageUrl: string;
 }
 
 export interface WeddingData {
@@ -49,7 +41,6 @@ export interface WeddingData {
     closing: string;
   };
   events: WeddingEvent[];
-  gallery: GalleryItem[];
   dua: string;
   closingNote: string;
   locationYear: string;
@@ -65,29 +56,27 @@ export const weddingDetails: WeddingData = {
   quranicVerseArabic: "وَخَلَقْنَاكُمْ أَزْوَاجًا",
   quranicVerseTranslation: "And We created you in pairs.",
   quranicVerseReference: "78:8",
-  underBlessingsTitle: "UNDER THE BLESSINGS OF THEIR FAMILIES",
+  underBlessingsTitle: "UNDER THE BLESSINGS OF Late Mr. Mohammed Yousuf Sahab",
   coupleInitials: "M & A",
   targetNikahDateISO: "2026-11-26T16:30:00+05:30",
 
   bride: {
-    role: "Bride",
+    role: "The Bride",
     name: "Mizba Tehreem Fatima",
     fullName: "Mizba Tehreem Fatima",
     qualification: "B. Pharmacy",
     parentage: "D/o. Mohammed Ibrahim Mulla",
     father: "Mohammed Ibrahim Mulla",
-    illustration: "/assets/images/bride-anime.png",
     about: "May Allah bless her with endless joy, barakah and love in this sacred union."
   },
 
   groom: {
-    role: "Groom",
+    role: "The Groom",
     name: "Altamash Ali",
     fullName: "Altamash Ali",
     qualification: "B.E., Mechanical Engineer",
     parentage: "S/o. Liyaqat Ali",
     father: "Liyaqat Ali",
-    illustration: "/assets/images/groom-anime.png",
     about: "May Allah bestow wisdom, happiness and prosperity upon this new journey together."
   },
 
@@ -142,45 +131,6 @@ export const weddingDetails: WeddingData = {
       googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Majestic Garden Function Hall, Qamar Colony, Ring Road, Gulbarga, Karnataka"),
       iconType: "valima",
       note: "Join us with your families for a joyful evening."
-    }
-  ],
-
-  gallery: [
-    {
-      id: "gallery-bride",
-      title: "Bridal Elegance",
-      category: "Anime Artistry",
-      imageUrl: "/assets/images/bride-anime.png"
-    },
-    {
-      id: "gallery-groom",
-      title: "Royal Sherwani",
-      category: "Anime Artistry",
-      imageUrl: "/assets/images/groom-anime.png"
-    },
-    {
-      id: "gallery-1",
-      title: "Floral Arabesque",
-      category: "Invitation Motif",
-      imageUrl: "/assets/images/gallery-1.svg"
-    },
-    {
-      id: "gallery-2",
-      title: "Golden Crescent & Arch",
-      category: "Islamic Architecture",
-      imageUrl: "/assets/images/gallery-2.svg"
-    },
-    {
-      id: "gallery-3",
-      title: "Lavender Blossom Wreath",
-      category: "Floral Stationery",
-      imageUrl: "/assets/images/gallery-3.svg"
-    },
-    {
-      id: "gallery-4",
-      title: "Traditional Lantern & Lights",
-      category: "Celebration",
-      imageUrl: "/assets/images/gallery-4.svg"
     }
   ],
 

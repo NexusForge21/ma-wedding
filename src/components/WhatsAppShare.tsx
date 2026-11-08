@@ -16,7 +16,7 @@ export const WhatsAppShare: React.FC = () => {
   const shareText = `You're cordially invited to celebrate the wedding of ${weddingDetails.bride.fullName} & ${weddingDetails.groom.fullName}.
 
 Nikah: 26 November 2026
-Wedding Dinner: 26 November 2026
+Nikah Dinner: 26 November 2026
 Valima: 27 November 2026
 
 We look forward to your presence and duas.

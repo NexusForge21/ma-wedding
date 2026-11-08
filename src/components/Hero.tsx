@@ -27,11 +27,11 @@ export const Hero: React.FC = () => {
         <div className="absolute inset-2 sm:inset-3 border border-[#C6A46C]/20 rounded-xl pointer-events-none" />
 
         {/* 1. ARABIC BISMILLAH & ENGLISH TRANSLITERATION */}
-        <div className="mb-5 space-y-2">
+        <div className="mb-6 space-y-2.5">
           <h2
             dir="rtl"
             lang="ar"
-            className="font-arabic text-3xl sm:text-4xl md:text-5xl text-[#9A7B42] leading-relaxed tracking-normal select-none"
+            className="font-arabic text-2xl sm:text-3xl md:text-4xl text-[#29252E] font-normal leading-[1.8] tracking-normal select-none"
             style={{ fontFeatureSettings: '"calt", "liga"' }}
           >
             {weddingDetails.bismillahArabic}
@@ -42,16 +42,16 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* 2. QURANIC AYAT & REFERENCE */}
-        <div className="my-4 space-y-1.5">
+        <div className="my-5 space-y-2">
           <p
             dir="rtl"
             lang="ar"
-            className="font-arabic text-2xl sm:text-3xl text-[#29252E] font-medium leading-relaxed select-none"
+            className="font-arabic text-xl sm:text-2xl md:text-3xl text-[#9A7B42] font-normal leading-[1.8] select-none"
             style={{ fontFeatureSettings: '"calt", "liga"' }}
           >
             {weddingDetails.quranicVerseArabic}
           </p>
-          <p className="font-serif italic text-base sm:text-lg text-[#9A7B42]">
+          <p className="font-serif italic text-base sm:text-lg text-[#29252E] font-normal">
             "{weddingDetails.quranicVerseTranslation}"
           </p>
           <p className="font-sans text-[11px] sm:text-xs text-[#5A5462]/80 uppercase tracking-widest font-medium">

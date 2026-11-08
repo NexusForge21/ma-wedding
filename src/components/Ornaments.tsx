@@ -29,7 +29,7 @@ export const FloralCorner: React.FC<{
         viewBox="0 0 110 110"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-20 h-20 sm:w-28 sm:h-28 opacity-80"
+        className="w-16 h-16 sm:w-24 sm:h-24 opacity-80"
       >
         <path
           d="M6 6 C40 6, 70 20, 85 55 C95 80, 104 104, 104 104"
@@ -44,7 +44,6 @@ export const FloralCorner: React.FC<{
           strokeLinecap="round"
           strokeDasharray="2 3"
         />
-        {/* Lavender leaves & petals */}
         <path
           d="M32 18 C38 12, 48 14, 50 24 C44 26, 36 24, 32 18 Z"
           fill="#B8A4D8"
@@ -59,26 +58,8 @@ export const FloralCorner: React.FC<{
           stroke="#9A7B42"
           strokeWidth="0.75"
         />
-        <path
-          d="M48 30 C56 22, 68 25, 68 37 C58 39, 50 36, 48 30 Z"
-          fill="#DFCA9B"
-          fillOpacity="0.45"
-          stroke="#C6A46C"
-          strokeWidth="0.75"
-        />
-        <path
-          d="M30 48 C22 56, 25 68, 37 68 C39 58, 36 50, 30 48 Z"
-          fill="#DFCA9B"
-          fillOpacity="0.45"
-          stroke="#C6A46C"
-          strokeWidth="0.75"
-        />
-        <circle cx="16" cy="16" r="4.5" fill="#C6A46C" fillOpacity="0.85" />
-        <circle cx="16" cy="16" r="2" fill="#FFFDF7" />
-        <circle cx="23" cy="16" r="3" fill="#B8A4D8" fillOpacity="0.6" />
-        <circle cx="9" cy="16" r="3" fill="#B8A4D8" fillOpacity="0.6" />
-        <circle cx="16" cy="23" r="3" fill="#B8A4D8" fillOpacity="0.6" />
-        <circle cx="16" cy="9" r="3" fill="#B8A4D8" fillOpacity="0.6" />
+        <circle cx="16" cy="16" r="4" fill="#C6A46C" fillOpacity="0.85" />
+        <circle cx="16" cy="16" r="1.5" fill="#FFFDF7" />
       </svg>
     </div>
   );
@@ -92,11 +73,11 @@ export const FloralDivider: React.FC<{ className?: string; variant?: 'gold' | 'l
   const strokeColor = variant === 'lavender' ? '#B8A4D8' : '#C6A46C';
 
   return (
-    <div className={`flex items-center justify-center gap-3 my-6 sm:my-8 ${className}`} aria-hidden="true">
-      <div className="h-[1px] w-12 sm:w-24 bg-gradient-to-r from-transparent to-[#C6A46C]/60" />
+    <div className={`flex items-center justify-center gap-3 my-5 sm:my-6 ${className}`} aria-hidden="true">
+      <div className="h-[1px] w-12 sm:w-20 bg-gradient-to-r from-transparent to-[#C6A46C]/60" />
       <svg
-        width="44"
-        height="20"
+        width="40"
+        height="18"
         viewBox="0 0 44 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -112,12 +93,12 @@ export const FloralDivider: React.FC<{ className?: string; variant?: 'gold' | 'l
         <circle cx="4" cy="10" r="1.5" fill={strokeColor} />
         <circle cx="40" cy="10" r="1.5" fill={strokeColor} />
       </svg>
-      <div className="h-[1px] w-12 sm:w-24 bg-gradient-to-l from-transparent to-[#C6A46C]/60" />
+      <div className="h-[1px] w-12 sm:w-20 bg-gradient-to-l from-transparent to-[#C6A46C]/60" />
     </div>
   );
 };
 
-// AWESOME LUXURY M & A EMBLEM / MONOGRAM
+// LUXURY M & A EMBLEM / MONOGRAM (M: Gold, &: Black, A: Gold)
 export const MonogramSeal: React.FC<{ size?: 'sm' | 'md' | 'lg' | 'xl'; className?: string }> = ({
   size = 'md',
   className = '',
@@ -131,8 +112,8 @@ export const MonogramSeal: React.FC<{ size?: 'sm' | 'md' | 'lg' | 'xl'; classNam
 
   return (
     <div className={`relative inline-flex items-center justify-center ${className}`}>
-      {/* Glow behind logo */}
-      <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#B8A4D8]/20 via-[#DFCA9B]/30 to-[#C6A46C]/20 blur-xl pointer-events-none -z-10" />
+      {/* Outer subtle glow */}
+      <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#B8A4D8]/15 via-[#DFCA9B]/25 to-[#C6A46C]/20 blur-xl pointer-events-none -z-10" />
 
       {/* SVG Royal Crest */}
       <svg
@@ -147,10 +128,6 @@ export const MonogramSeal: React.FC<{ size?: 'sm' | 'md' | 'lg' | 'xl'; classNam
             <stop offset="35%" stopColor="#DFCA9B" />
             <stop offset="70%" stopColor="#C6A46C" />
             <stop offset="100%" stopColor="#9A7B42" />
-          </linearGradient>
-          <linearGradient id="lavenderAccent" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#F4F0FA" />
-            <stop offset="100%" stopColor="#E0D6F0" />
           </linearGradient>
           <filter id="monogramShadow" x="-10%" y="-10%" width="120%" height="120%">
             <feDropShadow dx="0" dy="2" stdDeviation="3" floodColor="#9A7B42" floodOpacity="0.25" />
@@ -176,19 +153,19 @@ export const MonogramSeal: React.FC<{ size?: 'sm' | 'md' | 'lg' | 'xl'; classNam
         <circle cx="100" cy="100" r="76" fill="none" stroke="url(#goldGradient)" strokeWidth="0.6" strokeDasharray="2 3" opacity="0.6" />
 
         {/* Delicate Corner Leaf Petals inside disc */}
-        <path d="M60 60 Q70 65 72 75 Q65 72 60 60 Z" fill="#B8A4D8" fillOpacity="0.4" />
-        <path d="M140 60 Q130 65 128 75 Q135 72 140 60 Z" fill="#B8A4D8" fillOpacity="0.4" />
-        <path d="M60 140 Q70 135 72 125 Q65 128 60 140 Z" fill="#B8A4D8" fillOpacity="0.4" />
-        <path d="M140 140 Q130 135 128 125 Q135 128 140 140 Z" fill="#B8A4D8" fillOpacity="0.4" />
+        <path d="M60 60 Q70 65 72 75 Q65 72 60 60 Z" fill="#B8A4D8" fillOpacity="0.3" />
+        <path d="M140 60 Q130 65 128 75 Q135 72 140 60 Z" fill="#B8A4D8" fillOpacity="0.3" />
+        <path d="M60 140 Q70 135 72 125 Q65 128 60 140 Z" fill="#B8A4D8" fillOpacity="0.3" />
+        <path d="M140 140 Q130 135 128 125 Q135 128 140 140 Z" fill="#B8A4D8" fillOpacity="0.3" />
 
-        {/* Intertwined Luxury Typography */}
-        {/* Letter M */}
+        {/* --- EXACT REQUIREMENTS: M = GOLD, & = BLACK, A = GOLD --- */}
+        {/* Letter M (Champagne Gold) */}
         <text
-          x="78"
-          y="120"
+          x="75"
+          y="118"
           fontFamily="'Cormorant Garamond', Georgia, serif"
-          fontSize="72"
-          fontWeight="500"
+          fontSize="68"
+          fontWeight="600"
           fill="url(#goldGradient)"
           textAnchor="middle"
           letterSpacing="-1"
@@ -197,27 +174,27 @@ export const MonogramSeal: React.FC<{ size?: 'sm' | 'md' | 'lg' | 'xl'; classNam
           M
         </text>
 
-        {/* Ampersand & in center script */}
+        {/* Ampersand & (Deep Black / Charcoal #29252E) */}
         <text
           x="100"
           y="116"
-          fontFamily="'Pinyon Script', cursive"
-          fontSize="44"
+          fontFamily="'Cormorant Garamond', Georgia, serif"
+          fontSize="48"
           fontWeight="400"
-          fill="#B8A4D8"
+          fill="#29252E"
           textAnchor="middle"
           opacity="0.95"
         >
           &amp;
         </text>
 
-        {/* Letter A */}
+        {/* Letter A (Champagne Gold) */}
         <text
-          x="122"
-          y="120"
+          x="125"
+          y="118"
           fontFamily="'Cormorant Garamond', Georgia, serif"
-          fontSize="72"
-          fontWeight="500"
+          fontSize="68"
+          fontWeight="600"
           fill="url(#goldGradient)"
           textAnchor="middle"
           letterSpacing="-1"

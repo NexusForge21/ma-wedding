@@ -66,7 +66,11 @@ export const InvitationOpening: React.FC<InvitationOpeningProps> = ({ onOpen }) 
 
           {/* Top Section - Bismillah Arabic only */}
           <div className="text-center pt-2 relative z-10">
-            <span className="font-arabic text-xl sm:text-2xl text-[#9A7B42] block mb-2 leading-relaxed">
+            <span
+              dir="rtl"
+              lang="ar"
+              className="font-arabic text-xl sm:text-2xl text-[#29252E] block mb-2 leading-[1.8] select-none"
+            >
               {weddingDetails.bismillahArabic}
             </span>
             <p className="font-sans text-[11px] sm:text-xs uppercase tracking-[0.25em] text-[#5A5462] font-medium">

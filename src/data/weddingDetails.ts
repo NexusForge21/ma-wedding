@@ -21,36 +21,53 @@ export interface CoupleProfile {
   parentage: string;
   father: string;
   role: 'Bride' | 'Groom';
-  photoPlaceholder: string;
+  illustration: string;
   about: string;
+}
+
+export interface GalleryItem {
+  id: string;
+  title: string;
+  category: string;
+  imageUrl: string;
 }
 
 export interface WeddingData {
   bismillahArabic: string;
+  bismillahTransliteration: string;
   quranicVerseArabic: string;
   quranicVerseTranslation: string;
+  quranicVerseReference: string;
+  underBlessingsTitle: string;
   coupleInitials: string;
   targetNikahDateISO: string; // 2026-11-26T16:30:00+05:30 (After Asr)
   bride: CoupleProfile;
   groom: CoupleProfile;
-  blessingLateGrandfather: string;
   invitationMessage: {
     opening: string;
     body: string;
     closing: string;
   };
   events: WeddingEvent[];
+  gallery: GalleryItem[];
   dua: string;
-  contactNumber?: string;
+  closingNote: string;
+  locationYear: string;
+  instagram: {
+    username: string;
+    url: string;
+  };
 }
 
 export const weddingDetails: WeddingData = {
-  bismillahArabic: "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم",
+  bismillahArabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+  bismillahTransliteration: "Bismillah ir-Rahman ir-Rahim",
   quranicVerseArabic: "وَخَلَقْنَاكُمْ أَزْوَاجًا",
-  quranicVerseTranslation: "And We created you in pairs",
+  quranicVerseTranslation: "And We created you in pairs.",
+  quranicVerseReference: "78:8",
+  underBlessingsTitle: "UNDER THE BLESSINGS OF THEIR FAMILIES",
   coupleInitials: "M & A",
   targetNikahDateISO: "2026-11-26T16:30:00+05:30",
-  blessingLateGrandfather: "Under the blessings of Late Mr. Mohammed Yousuf Sahab",
 
   bride: {
     role: "Bride",
@@ -59,8 +76,8 @@ export const weddingDetails: WeddingData = {
     qualification: "B. Pharmacy",
     parentage: "D/o. Mohammed Ibrahim Mulla",
     father: "Mohammed Ibrahim Mulla",
-    photoPlaceholder: "/assets/images/bride-placeholder.svg",
-    about: "May Allah bless her with endless joy, barakah and love in this blessed union."
+    illustration: "/assets/images/bride-anime.png",
+    about: "May Allah bless her with endless joy, barakah and love in this sacred union."
   },
 
   groom: {
@@ -70,7 +87,7 @@ export const weddingDetails: WeddingData = {
     qualification: "B.E., Mechanical Engineer",
     parentage: "S/o. Liyaqat Ali",
     father: "Liyaqat Ali",
-    photoPlaceholder: "/assets/images/groom-placeholder.svg",
+    illustration: "/assets/images/groom-anime.png",
     about: "May Allah bestow wisdom, happiness and prosperity upon this new journey together."
   },
 
@@ -101,6 +118,7 @@ export const weddingDetails: WeddingData = {
       title: "WEDDING DINNER",
       subTitle: "Reception & Feast",
       date: "Thursday, 26 November 2026",
+      islamicDate: "15 Jamadi us-Sani 1448 AH",
       time: "8:00 PM",
       venueName: "Al-Israr Function Hall",
       venueAddress: "Islamabad Colony, Gulbarga, Karnataka",
@@ -127,5 +145,50 @@ export const weddingDetails: WeddingData = {
     }
   ],
 
-  dua: "May Allah bless the couple with love, happiness, barakah and a beautiful life together."
+  gallery: [
+    {
+      id: "gallery-bride",
+      title: "Bridal Elegance",
+      category: "Anime Artistry",
+      imageUrl: "/assets/images/bride-anime.png"
+    },
+    {
+      id: "gallery-groom",
+      title: "Royal Sherwani",
+      category: "Anime Artistry",
+      imageUrl: "/assets/images/groom-anime.png"
+    },
+    {
+      id: "gallery-1",
+      title: "Floral Arabesque",
+      category: "Invitation Motif",
+      imageUrl: "/assets/images/gallery-1.svg"
+    },
+    {
+      id: "gallery-2",
+      title: "Golden Crescent & Arch",
+      category: "Islamic Architecture",
+      imageUrl: "/assets/images/gallery-2.svg"
+    },
+    {
+      id: "gallery-3",
+      title: "Lavender Blossom Wreath",
+      category: "Floral Stationery",
+      imageUrl: "/assets/images/gallery-3.svg"
+    },
+    {
+      id: "gallery-4",
+      title: "Traditional Lantern & Lights",
+      category: "Celebration",
+      imageUrl: "/assets/images/gallery-4.svg"
+    }
+  ],
+
+  dua: "May Allah bless the couple with love, happiness, barakah and a beautiful life together.",
+  closingNote: "Made with love and duas",
+  locationYear: "Gulbarga, Karnataka • 2026",
+  instagram: {
+    username: "theinvitationhub.co",
+    url: "https://www.instagram.com/theinvitationhub.co/"
+  }
 };

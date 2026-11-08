@@ -3,9 +3,10 @@ import { AnimatePresence } from 'framer-motion';
 import { InvitationOpening } from '../components/InvitationOpening';
 import { Hero } from '../components/Hero';
 import { InvitationMessage } from '../components/InvitationMessage';
+import { BlessedCouple } from '../components/BlessedCouple';
 import { Countdown } from '../components/Countdown';
 import { WeddingEvents } from '../components/WeddingEvents';
-import { CoupleIntroduction } from '../components/CoupleIntroduction';
+import { Gallery } from '../components/Gallery';
 import { WhatsAppShare } from '../components/WhatsAppShare';
 import { Footer } from '../components/Footer';
 import { FloatingPetals } from '../components/Ornaments';
@@ -13,7 +14,6 @@ import { FloatingPetals } from '../components/Ornaments';
 export const Home: React.FC = () => {
   const [hasOpenedInvitation, setHasOpenedInvitation] = useState<boolean>(false);
 
-  // Check if user previously opened invitation in this session or prefers reduced motion
   useEffect(() => {
     const isReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (isReduced) {
@@ -37,9 +37,10 @@ export const Home: React.FC = () => {
       <main className="relative z-10">
         <Hero />
         <InvitationMessage />
+        <BlessedCouple />
         <Countdown />
         <WeddingEvents />
-        <CoupleIntroduction />
+        <Gallery />
         <Footer />
       </main>
 

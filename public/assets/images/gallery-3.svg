@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="100%" height="100%">
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="100%" stop-color="#F4F0FA"/>
+    </linearGradient>
+    <linearGradient id="gold3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFCA9B"/>
+      <stop offset="50%" stop-color="#C6A46C"/>
+      <stop offset="100%" stop-color="#9A7B42"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="650" fill="url(#g3)"/>
+  <rect x="20" y="20" width="460" height="610" rx="10" fill="none" stroke="url(#gold3)" stroke-width="1.5"/>
+  <circle cx="250" cy="270" r="110" fill="none" stroke="#B8A4D8" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <circle cx="250" cy="270" r="95" fill="#FFFDF7" stroke="url(#gold3)" stroke-width="1"/>
+  <!-- Lavender botanicals around circle -->
+  <circle cx="250" cy="160" r="6" fill="#B8A4D8"/>
+  <circle cx="360" cy="270" r="6" fill="#C6A46C"/>
+  <circle cx="250" cy="380" r="6" fill="#B8A4D8"/>
+  <circle cx="140" cy="270" r="6" fill="#C6A46C"/>
+  <text x="250" y="280" font-family="'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="600" fill="#9A7B42" text-anchor="middle">M &amp; A</text>
+  <text x="250" y="470" font-family="'Cormorant Garamond', Georgia, serif" font-size="28" font-style="italic" fill="#9A7B42" text-anchor="middle">Lavender Blossom Wreath</text>
+  <text x="250" y="505" font-family="'Inter', sans-serif" font-size="12" letter-spacing="2" fill="#5A5462" text-anchor="middle">FLORAL ELEGANCE</text>
+</svg>

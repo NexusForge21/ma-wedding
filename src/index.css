@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #B8A4D8;
+  --color-ivory: #FFFDF7;
+  --color-gold: #C6A46C;
+  --color-gold-light: #DFCA9B;
+  --color-gold-dark: #9A7B42;
+  --color-cream: #FAF8F3;
+  --color-charcoal: #29252E;
+  --color-charcoal-muted: #5A5462;
+  --color-lavender-soft: #F4F0FA;
+  --color-lavender-border: #E4DCF2;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-arabic: 'Amiri', serif;
+  --font-script: 'Pinyon Script', cursive;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #FAF8F3;
+    color: #29252E;
+  }
+}
+
+/* Custom shimmer and gold text utility */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #9A7B42 0%, #C6A46C 50%, #E8D3A7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(135deg, #C6A46C, #E8D3A7, #C6A46C) 1;
+}
+
+/* Subtle floating petal animation */
+@keyframes floatSlow {
+  0% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-25px) rotate(180deg) scale(1.08);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg) scale(1);
+    opacity: 0.6;
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 12s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatSlow 16s ease-in-out infinite reverse;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF8F3;
+}
+::-webkit-scrollbar-thumb {
+  background: #DFCA9B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C6A46C;
+}
